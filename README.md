@@ -1,24 +1,44 @@
-# README
+# Slack clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Slack clone built with Rails with the goal of learning more about Action Cable.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-* System dependencies
+### Prerequisites
 
-* Configuration
+```
+docker
+docker-compose
+```
+Installation instructions for docker and compose can be found [here](https://docs.docker.com/install).
 
-* Database creation
+### Installing and getting started
 
-* Database initialization
+To get the app up and running in your machine execute the following commands
 
-* How to run the test suite
+```shell
+git clone https://github.com/viniciuspietscher/slack-clone.git
+cd slack-clone
+docker-compose build
+docker-compose run --rm web rails db:create db:migrate
+docker-compose up
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Access the application in http://localhost:3000
 
-* Deployment instructions
+**TODO** End with an example of getting some data out of the system or using it for a little demo
 
-* ...
+
+## Built With
+
+* [Ruby on Rails](http://rubyonrails.org) - Web framework
+* [Docker](https://docker.com) - Container platform
+* [Redis](https://redis.io/) - Database
+* [PostgreSQL](https://www.postgresql.org/) - Database
+
+
+## Acknowledgments
+
+* Code from [OneBitCode](https://onebitcode.com) - Full Stack Web Development Bootcamp
