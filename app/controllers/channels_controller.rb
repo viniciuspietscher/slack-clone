@@ -19,7 +19,7 @@ class ChannelsController < ApplicationController
     @channel.destroy
 
     respond_to do |format|
-      format.json { head :ok }
+      format.json { render json: true }
     end
   end
 
