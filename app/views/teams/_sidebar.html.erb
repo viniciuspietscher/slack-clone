@@ -4,7 +4,7 @@
          <span class="team_title"><%= @team.slug %></span>
          <% if can? :destroy, @team %>
          <a class="right team_icon remove_team" href="#">
-         <i class="material-icons" id="<%= @team.id %>">settings</i>
+         <i class="material-icons" id="<%= @team.id %>">delete</i>
          </a>
          <% end %>
       </div>
@@ -28,7 +28,7 @@
                            </a>
                              <% if can? :destroy, channel %>
                                <a class="right remove_channel" href="#" id="<%= channel.id %>">
-                                 <i class="material-icons" id="<%= channel.id %>">settings</i>
+                                 <i class="material-icons" id="<%= channel.id %>">delete</i>
                                </a>
                            <% end %>
                         </div>
@@ -66,7 +66,7 @@
                               </a>
                               <% if can? :destroy, @team %>
                               <a class="right remove_user" id="<%= user.id %>" href="#" style="color: #ccc">
-                                <i class="material-icons" id="<%= user.id %>">settings</i>
+                                <i class="material-icons" id="<%= user.id %>">delete</i>
                               </a>
                               <% end %>
                            </div>
