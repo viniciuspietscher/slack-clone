@@ -4,5 +4,5 @@ class Message < ApplicationRecord
   validates  :body, presence: true
   validates  :user, presence: true
 
-  after_create_commit { MessageBroadCastJob.perform_later self }
+  after_create_commit { MessageBroadcastJob.perform_later self }
 end

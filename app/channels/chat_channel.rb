@@ -8,7 +8,7 @@ class ChatChannel < ApplicationCable::Channel
     end
   end
 
-  def receive
+  def receive(data)
     @message = Message.new(body: data["message"], user: current_user)
     @record.messages << @message
   end
@@ -23,6 +23,6 @@ class ChatChannel < ApplicationCable::Channel
         @record = Talk.find_by(user_one_id: [params[:id], current_user.id], user_two_id: [params[:id], current_user.id], team: params[:team_id])
       end
       @chat = @record.id
-      ability.can? :read, @record
+      (ability.can? :read, @record)? true : false
     end
 end
