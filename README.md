@@ -29,6 +29,7 @@ docker-compose up
 Access the application in http://localhost:3000
 
 **TODO** End with an example of getting some data out of the system or using it for a little demo
+![](https://thumbs.gfycat.com/FavoriteUnconsciousFallowdeer-size_restricted.gif)
 
 
 ## Built With
