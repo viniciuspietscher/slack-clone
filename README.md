@@ -34,10 +34,10 @@ Access the application in http://localhost:3000
 
 ## Built With
 
-* [Ruby on Rails](http://rubyonrails.org) - Web framework
-* [Docker](https://docker.com) - Container platform
-* [Redis](https://redis.io/) - Database
-* [PostgreSQL](https://www.postgresql.org/) - Database
+* [Ruby on Rails](http://rubyonrails.org)
+* [Docker](https://docker.com)
+* [Redis](https://redis.io/)
+* [PostgreSQL](https://www.postgresql.org/)
 
 
 ## Acknowledgments
