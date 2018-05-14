@@ -28,11 +28,11 @@ docker-compose run --rm web rails db:create db:migrate
 docker-compose up
 ```
 
-Access the application in http://localhost:3000
+Access the application at
+http://localhost:3000
 
 
-
-## Built With
+## Project Stack
 
 * [Ruby on Rails](http://rubyonrails.org)
 * [Docker](https://docker.com)
