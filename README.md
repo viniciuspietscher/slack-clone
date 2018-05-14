@@ -2,6 +2,8 @@
 
 A Slack clone built with Rails with the goal of learning more about Action Cable.
 
+![](https://thumbs.gfycat.com/FavoriteUnconsciousFallowdeer-size_restricted.gif)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -28,7 +30,6 @@ docker-compose up
 
 Access the application in http://localhost:3000
 
-![](https://thumbs.gfycat.com/FavoriteUnconsciousFallowdeer-size_restricted.gif)
 
 
 ## Built With
